@@ -1,0 +1,120 @@
+*, body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial,sans-serif;
+}
+
+.upper{
+  height: 100vh;
+  width: 100vw;
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(164,49,73,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  height: 80%;
+  width: 90%;
+  
+}
+h2{
+  margin-bottom: 8px;
+  color: white;
+}
+.header{
+  margin-bottom: 10px;
+  padding: 15px 27px 15px 15px;
+}
+.input-area,
+.date-area{
+  border-radius: 5px;
+  height: 50px;
+  background-color: rgb(196, 190, 190);
+  border: none;
+}
+
+.add-button,
+.deleteList{
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightgreen;
+  height: 50px;
+  width: 150px;
+}
+.deleteList{
+  background-color: rgb(236, 133, 133);
+}
+.list-area{ 
+  scroll-behavior: smooth;
+  height: 70%;
+  overflow-y: scroll;
+  padding: 15px;
+}
+.eachList{
+  margin-bottom: 10px;
+}
+.eachList,
+.input-container{
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.task{
+  color: white;
+  text-align: left;
+  overflow-wrap:break-word ;
+  font-size: 22px;
+  font-weight: bold;
+}
+.dueDate{
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-area::-webkit-scrollbar {
+  width: 12px; 
+}
+
+/* Track */
+.list-area::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 25px;
+  height: 80%;
+}
+ 
+/* Handle */
+.list-area::-webkit-scrollbar-thumb {
+  background: rgba(98, 32, 91, 0.416); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.list-area::-webkit-scrollbar-thumb:hover {
+  background: rgba(77, 14, 70, 0.416); 
+  cursor:grabbing;
+}
